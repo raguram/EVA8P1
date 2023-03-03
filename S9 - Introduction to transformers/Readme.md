@@ -26,3 +26,64 @@ Build the following network:
     * Copy and paste the Training Log
     * Copy and paste the training and validation loss chart
 
+## **Model Summary**
+
+```
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 16, 32, 32]             432
+              ReLU-2           [-1, 16, 32, 32]               0
+       BatchNorm2d-3           [-1, 16, 32, 32]              32
+            Conv2d-4           [-1, 32, 32, 32]           4,608
+              ReLU-5           [-1, 32, 32, 32]               0
+       BatchNorm2d-6           [-1, 32, 32, 32]              64
+            Conv2d-7           [-1, 48, 32, 32]          13,824
+              ReLU-8           [-1, 48, 32, 32]               0
+       BatchNorm2d-9           [-1, 48, 32, 32]              96
+AdaptiveAvgPool2d-10             [-1, 48, 1, 1]               0
+        Embedding-11             [-1, 48, 1, 1]               0
+           Linear-12                    [-1, 8]             392
+           Linear-13                    [-1, 8]             392
+           Linear-14                    [-1, 8]             392
+           Linear-15                   [-1, 48]             432
+          Ultimus-16                   [-1, 48]               0
+           Linear-17                    [-1, 8]             392
+           Linear-18                    [-1, 8]             392
+           Linear-19                    [-1, 8]             392
+           Linear-20                   [-1, 48]             432
+          Ultimus-21                   [-1, 48]               0
+           Linear-22                    [-1, 8]             392
+           Linear-23                    [-1, 8]             392
+           Linear-24                    [-1, 8]             392
+           Linear-25                   [-1, 48]             432
+          Ultimus-26                   [-1, 48]               0
+           Linear-27                    [-1, 8]             392
+           Linear-28                    [-1, 8]             392
+           Linear-29                    [-1, 8]             392
+           Linear-30                   [-1, 48]             432
+          Ultimus-31                   [-1, 48]               0
+           Linear-32                   [-1, 10]             490
+================================================================
+Total params: 25,978
+Trainable params: 25,978
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 2.25
+Params size (MB): 0.10
+Estimated Total Size (MB): 2.37
+----------------------------------------------------------------
+```
+
+## **Answers**
+
+1. Submit the link and answer the questions on the assignment page - https://github.com/raguram/EVA8P1/tree/main/S9%20-%20Introduction%20to%20transformers
+
+2. Share the code of model9.py - https://github.com/raguram/EVA8P1/blob/main/S9%20-%20Introduction%20to%20transformers/models/ultimus.py
+
+3. Copy and paste the Training Log - https://github.com/raguram/EVA8P1/blob/main/S9%20-%20Introduction%20to%20transformers/S9-TransformerUltimus.ipynb
+
+4. Copy and paste the training and validation loss chart
+
+![Result Graph](./S9Ultimus-Result-graph.png)
